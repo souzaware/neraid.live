@@ -34,7 +34,7 @@ main :: proc() {
 
     write_err := os.write_entire_file("static/index.html", transmute([]u8)s)
 
-    if err != nil {
+    if write_err != nil {
         fmt.println(err)
     }
 }

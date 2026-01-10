@@ -1,19 +1,36 @@
 package main
 
 import "core:fmt"
+import "core:log"
 import os "core:os/os2"
 import mustache "./vendor/odin-mustache"
 
-User :: struct {
-    name: string,
+Data :: struct {
+    social: []struct {
+        icon_url: string,
+        url: string,
+    }
 }
 
 main :: proc() {
-    user := User{
-        name = "Test",
+    data := Data{
+        social = {
+            {
+                icon_url = "res/icons/github-mark-white.svg",
+                url = "https://github.com/souzaware/",
+            },
+        }
     }
 
-    s, err := mustache.render_from_filename("templates/index.mustache", user)
+    os.make_directory("static/res")
+    os.copy_directory_all("static/res", "res/")
+
+    s, err := mustache.render_from_filename("res/templates/index.html", data)
+
+    if err != nil {
+        log.error(err)
+        return
+    }
 
     write_err := os.write_entire_file("static/index.html", transmute([]u8)s)
 

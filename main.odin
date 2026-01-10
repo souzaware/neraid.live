@@ -13,9 +13,9 @@ main :: proc() {
         name = "Test",
     }
 
-    s, err := mustache.render_from_filename("templates/index.html", user)
+    s, err := mustache.render_from_filename("templates/index.mustache", user)
 
-    write_err := os.write_entire_file("static/index.mustache", transmute([]u8)s)
+    write_err := os.write_entire_file("static/index.html", transmute([]u8)s)
 
     if err != nil {
         fmt.println(err)

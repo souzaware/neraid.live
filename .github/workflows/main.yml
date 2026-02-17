@@ -17,6 +17,7 @@ jobs:
         shell: bash
         run: |
           odin run .
+          cp CNAME static/
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:

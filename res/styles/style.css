@@ -73,7 +73,6 @@ main {
 .social-row:hover {
     cursor: pointer;
     border-color: green;
-    transform: scale(1.1);
     background-color: #242424;
 }
 

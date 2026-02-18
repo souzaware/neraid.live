@@ -7,8 +7,7 @@ import mustache "./vendor/odin-mustache"
 
 Data :: struct {
     social: []struct {
-        site: string,
-        page: string,
+        title: string,
         icon_url: string,
         url: string,
     }
@@ -18,43 +17,42 @@ main :: proc() {
     data := Data{
         social = {
             {
-                site = "Discord",
-                page = "Community",
+                title = "join our community!!",
                 icon_url = "res/icons/discord.png",
                 url = "https://discord.gg/Et4Fe4Kc",
             },
             {
-                site = "GitHub",
+                title = "my projects on github",
                 icon_url = "res/icons/github.png",
                 url = "https://github.com/souzaware/",
             },
             {
-                site = "Twitch",
+                title = "streaming on twitch",
                 icon_url = "res/icons/twitch.png",
                 url = "https://twitch.tv/neraid_live",
             },
             {
-                site = "YouTube",
+                title = "i post on youtube!!",
                 icon_url = "res/icons/youtube.png",
                 url = "https://youtube.com/@neraid",
             },
             {
-                site = "Patreon",
+                title = "practice charity :)",
                 icon_url = "res/icons/patreon.png",
                 url = "https://patreon.com/neraid_live",
             },
             {
-                site = "X",
+                title = "toXic",
                 icon_url = "res/icons/x.png",
                 url = "https://x.com/neraid_live",
             },
             {
-                site = "Instagram",
+                title = "a peek into my life",
                 icon_url = "res/icons/instagram.png",
                 url = "https://instagram.com/neraid.live",
             },
             {
-                site = "TikTok (eww)",
+                title = "low attention span tok",
                 icon_url = "res/icons/tiktok.png",
                 url = "https://tiktok.com/@neraid.live",
             },

@@ -25,43 +25,36 @@ main :: proc() {
             },
             {
                 site = "GitHub",
-                page = "souzaware",
                 icon_url = "res/icons/github.png",
                 url = "https://github.com/souzaware/",
             },
             {
                 site = "Twitch",
-                page = "neraid_live",
                 icon_url = "res/icons/twitch.png",
                 url = "https://twitch.tv/neraid_live",
             },
             {
                 site = "YouTube",
-                page = "neraid",
                 icon_url = "res/icons/youtube.png",
                 url = "https://youtube.com/@neraid",
             },
             {
                 site = "Patreon",
-                page = "neraid_live",
                 icon_url = "res/icons/patreon.png",
                 url = "https://patreon.com/neraid_live",
             },
             {
                 site = "X",
-                page = "neraid_live",
                 icon_url = "res/icons/x.png",
                 url = "https://x.com/neraid_live",
             },
             {
                 site = "Instagram",
-                page = "neraid.live",
                 icon_url = "res/icons/instagram.png",
                 url = "https://instagram.com/neraid.live",
             },
             {
                 site = "TikTok (eww)",
-                page = "neraid.live",
                 icon_url = "res/icons/tiktok.png",
                 url = "https://tiktok.com/@neraid.live",
             },

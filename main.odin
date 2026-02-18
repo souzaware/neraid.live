@@ -18,6 +18,12 @@ main :: proc() {
     data := Data{
         social = {
             {
+                site = "Discord",
+                page = "Community",
+                icon_url = "res/icons/discord.png",
+                url = "https://discord.gg/Et4Fe4Kc",
+            },
+            {
                 site = "GitHub",
                 page = "souzaware",
                 icon_url = "res/icons/github.png",

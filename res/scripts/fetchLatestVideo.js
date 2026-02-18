@@ -1,5 +1,5 @@
-let list = fetch("https://crossorigin.me/https://www.youtube.com/feeds/videos.xml?channel_id=UC4U1e34boXZ7cjYjqzf9osw").then(res => res.text()).then(xml => {
-    let id = "dQw4w9WgXcQ";
+let id = "dQw4w9WgXcQ";
+let list = fetch("https://cors.andreigamer5000.workers.dev/?url=" + ("https://www.youtube.com/feeds/videos.xml?channel_id=UC4U1e34boXZ7cjYjqzf9osw")).then(res => res.text()).then(xml => {
 
     try {
         let parsed_xml = new DOMParser().parseFromString(xml, "text/xml");

@@ -5,6 +5,10 @@
     font-style: normal;
 }
 
+title {
+    display: none;
+}
+
 * {
     all: unset;
     transition: 100ms;

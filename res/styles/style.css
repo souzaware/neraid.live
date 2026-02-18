@@ -44,6 +44,9 @@ main {
     flex-direction: column;
     text-align: center;
     flex: 1;
+
+    justify-content: center;
+    align-items: center;
 }
 
 #socials {
@@ -51,7 +54,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
+    width: fit-content;
 }
 
 .social-row {
@@ -63,7 +66,7 @@ main {
     justify-content: start;
     align-items: center;
     flex-direction: row;
-    min-width: 20rem;
+    width: 100%;
     cursor: pointer;
 }
 

@@ -9,15 +9,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: laytan/setup-odin@v2
-      - name: Make directories
-        shell: bash
-        run: |
-          mkdir static
       - name: generate
         shell: bash
         run: |
           odin run .
-          cp CNAME static/
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:

@@ -2,8 +2,6 @@ name: Fetch latest video
 
 on:
   workflow_dispatch: 
-  schedule:
-    - cron: 00 * * * *
   push:
     branches: [ "gh-pages" ]
 

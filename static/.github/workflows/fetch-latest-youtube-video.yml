@@ -12,6 +12,7 @@ jobs:
     environment: youtube-api
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v4
     - name: Fetch latest video
       shell: bash
       run: |

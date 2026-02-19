@@ -11,4 +11,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - run: curl "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UC4U1e34boXZ7cjYjqzf9osw&maxResults=10&order=date&type=video&key=$YOUTUBE_API_KEY"
+    - name: Pull latest video
+      shell: bash
+      run: curl "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UC4U1e34boXZ7cjYjqzf9osw&maxResults=10&order=date&type=video&key=${{ secrets.YOUTUBE_API_KEY }}"

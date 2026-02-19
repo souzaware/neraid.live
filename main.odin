@@ -52,7 +52,7 @@ main :: proc() {
                 url = "https://instagram.com/neraid.live",
             },
             {
-                title = "low attention span tok",
+                title = "short attention span tok",
                 icon_url = "res/icons/tiktok.png",
                 url = "https://tiktok.com/@neraid.live",
             },

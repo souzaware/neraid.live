@@ -59,11 +59,9 @@ main :: proc() {
         }
     }
 
-    os.make_directory("static")
-    os.make_directory("static/res")
-    os.copy_directory_all("static/res", "res/")
+    os.copy_directory_all("static/", "src/static")
 
-    s, err := mustache.render_from_filename("res/templates/index.html", data)
+    s, err := mustache.render_from_filename("src/templates/index.html", data)
 
     if err != nil {
         log.error(err)

@@ -1,0 +1,13 @@
+name: Pull latest video
+
+on:
+  schedule:
+    - cron: 00 12,00 * * *
+  push:
+    branches: [ "gh-pages" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - run: curl "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UC4U1e34boXZ7cjYjqzf9osw&maxResults=10&order=date&type=video&key=${YOUTUBE_API_KEY}"

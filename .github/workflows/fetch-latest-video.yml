@@ -2,8 +2,6 @@ name: Fetch latest video
 
 on:
   workflow_dispatch: 
-  push:
-    branches: [ "gh-pages" ]
 
 jobs:
   fetch:

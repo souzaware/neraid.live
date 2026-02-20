@@ -70,6 +70,42 @@ main {
     cursor: pointer;
 }
 
+.gay-text {
+    text-shadow: 0 0 4px red;
+    background: linear-gradient(90deg, red, white);
+    background-clip: text;
+    color: transparent;
+}
+
+.hottest-text {
+    display: inline-flex;
+}
+
+.hottest-text > * {
+    animation: text-float 1s infinite ease-in-out alternate;
+    animation-delay: calc(var(--index) * 0.1s);
+    transform: translateY(-10px);
+}
+
+.hottest-text > *:nth-child(1) { --index: 1; }
+.hottest-text > *:nth-child(2) { --index: 2; }
+.hottest-text > *:nth-child(3) { --index: 3; }
+.hottest-text > *:nth-child(4) { --index: 4; }
+.hottest-text > *:nth-child(5) { --index: 5; }
+.hottest-text > *:nth-child(6) { --index: 6; }
+.hottest-text > *:nth-child(7) { --index: 7; }
+.hottest-text > *:nth-child(8) { --index: 8; }
+.hottest-text > *:nth-child(9) { --index: 9; }
+
+@keyframes text-float {
+0% {
+    transform: translateY(-10px);
+}
+100% {
+    transform: translateY(10px);
+}
+}
+
 .social-row:hover {
     cursor: pointer;
     border-color: green;

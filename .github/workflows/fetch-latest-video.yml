@@ -8,7 +8,7 @@ on:
     
 jobs:
   trigger:
-    environment: youtube-api
+    environment: gh-pages
     runs-on: ubuntu-latest
     steps:
       - name: Trigger Fetch Latest Video

@@ -4,7 +4,7 @@ var id = "dQw4w9WgXcQ";
     try {
         const req = await fetch("LATEST_VIDEO_ID");
 
-        if (req.status.ok) {
+        if (req.ok) {
             id = await req.text();
         }
     } catch (e) {}
